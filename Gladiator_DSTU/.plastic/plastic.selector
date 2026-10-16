@@ -1,0 +1,4 @@
+repository "Gladiator_DSTU/Gladiator_DSTU@10171493536916@cloud"
+  path "/"
+    br "/main"
+    co "/main"
