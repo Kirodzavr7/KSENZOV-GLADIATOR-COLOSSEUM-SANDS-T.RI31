@@ -15,6 +15,36 @@
                     "interactions": "",
                     "initialStateCheck": true,
                     "priority": 0
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "836ba34d-e867-4f3b-9b87-05b98290d99f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "505794d5-db50-4438-8645-5264bd62a7e3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "LockOn",
+                    "type": "Button",
+                    "id": "34b36d1a-44d5-46bf-995a-dd53fe2655d8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -32,7 +62,7 @@
                 {
                     "name": "up",
                     "id": "cc5ef6c9-9a6d-48f2-b901-e1ae0cd2c759",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -74,26 +104,48 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "forward",
-                    "id": "f3774984-fbba-4fc9-bc57-e594140bc558",
-                    "path": "<Keyboard>/w",
+                    "name": "",
+                    "id": "ad8b066b-3614-4327-810d-2b75e3f624fa",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Pause",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "backward",
-                    "id": "94a3550c-f68b-4eb1-a12a-f841543cd126",
-                    "path": "<Keyboard>/s",
+                    "name": "",
+                    "id": "fa831259-aada-409d-8cd0-d2d9c4ed090d",
+                    "path": "<Gamepad>/start",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
+                    "action": "Pause",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2beff435-5661-4e10-a5b4-75a4bf7f154d",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de380466-fb43-4a3e-aea8-4c6987c0ec42",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LockOn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
