@@ -28,6 +28,7 @@ public class CameraController : MonoBehaviour
     {
       if (_target == null) return;
       if (Time.timeScale == 0f) return;
+      
       if (_targetLock != null && _targetLock.IsLocked)
       {
           Transform currentTarget = _targetLock.CurrentTarget;
