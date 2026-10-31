@@ -65,6 +65,23 @@ public class GameInput : MonoBehaviour
 
         _playerInputActions.Disable();
     }
+    
+    public void DisableGameplayInput()
+    {
+        if (_playerInputActions == null)
+            return;
+
+        if (_isBlocking)
+        {
+            _isBlocking = false;
+            OnBlockCanceled?.Invoke(this, EventArgs.Empty);
+        }
+
+        _playerInputActions.Player.Move.Disable();
+        _playerInputActions.Player.LockOn.Disable();
+        _playerInputActions.Combat.Disable();
+    }
+
 
     public Vector2 GetMovementVector()
     {

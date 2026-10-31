@@ -29,12 +29,18 @@ public class PlayerAnimator : MonoBehaviour
     
     private void GameInput_OnBlockStarted(object sender, System.EventArgs e)
     {
-        _animator.SetBool("block", true);
+        if (HasParameter("block", _animator))
+        {
+            _animator.SetBool("block", true);
+        }
     }
 
     private void GameInput_OnBlockCanceled(object sender, System.EventArgs e)
     {
-        _animator.SetBool("block", false);
+        if (HasParameter("block", _animator))
+        {
+            _animator.SetBool("block", false);
+        }
     }
 
     private void GameInput_OnPlayerAttack(object sender, System.EventArgs e)
