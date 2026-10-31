@@ -6,7 +6,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] private TargetLock _targetLock;
     [SerializeField] private float _mouseSensivity = 0.2f;
     [SerializeField] private float _distance = 5f;
-    [SerializeField] private Vector2 _pichLimits = new Vector2(-20f, 60f);
+    [SerializeField] private Vector2 _pichLimits = new Vector2(-10f,45f);
+    
     [SerializeField] private float _rotationSpeed = 10f;
     
     private float _yaw = 0f;

@@ -148,6 +148,56 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Combat",
+            "id": "28d22096-9d8e-4fd0-b5c6-2fda5a691f68",
+            "actions": [
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "03c35ef9-0e5a-486c-ab83-40055942d32e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                },
+                {
+                    "name": "Block",
+                    "type": "Button",
+                    "id": "5e86fe40-ad9e-4be8-87aa-8bcf6cbb95fd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b1206339-e089-434c-88ce-23bf09593baf",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0ef2eff6-3814-4eed-b771-6b965a8aa194",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Block",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
